@@ -82,6 +82,17 @@ final class Calendrier
         }
     }
 
+    public function getAnother()
+    {
+        $debut = new \DateTimeImmutable(date('Y') . '-' . date('m') . '-01');
+        $fin = $debut->modify('+1 month');
+        ddd($debut, $fin);
+    }
+
+    /*
+     * récupérer les evenements qui sont associés à l'utilisateur
+     */
+
     /**
      * Retourne la page du calendrier
      *
