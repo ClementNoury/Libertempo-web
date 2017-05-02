@@ -92,6 +92,7 @@ final class Calendrier
             $debut,
             $fin
         );
+        $a->fetchEvenements();
         ddd($debut, $fin);
     }
 
