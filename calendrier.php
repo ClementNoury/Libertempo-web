@@ -52,7 +52,7 @@ function getTitleJour(\App\Libraries\Calendrier\Evenements $evenements, $nom, $j
 {
     $title = implode('<br>*&nbsp;', $evenements->getTitleDate($nom, $jour));
     if (!empty($title)) {
-        return $jour . ' :<br>*&nbsp;' . $title;
+        return '*&nbsp;' . $title;
     }
     return '';
 }
